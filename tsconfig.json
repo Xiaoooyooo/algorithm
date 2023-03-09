@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "allowJs": false,
+    "noEmit": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*.ts"]
+}
