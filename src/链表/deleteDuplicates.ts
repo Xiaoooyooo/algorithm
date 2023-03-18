@@ -1,12 +1,6 @@
 // https://leetcode.cn/problems/remove-duplicates-from-sorted-list
 // 给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。
 
-declare class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(value?: number, next?: ListNode);
-}
-
 // 递归法
 export default function deleteDuplicates(
   head: ListNode | null

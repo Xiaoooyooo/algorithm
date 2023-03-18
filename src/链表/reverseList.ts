@@ -1,12 +1,6 @@
 // https://leetcode.cn/problems/reverse-linked-list
 // 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
 
-declare class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode);
-}
-
 // 改进版递归
 export default function reverseList(head: ListNode | null): ListNode | null {
   if (head === null || head.next === null) return head;

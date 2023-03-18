@@ -1,9 +1,3 @@
-declare class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null);
-}
-
 // 快慢指针
 export default function removeNthFromEnd(
   head: ListNode | null,

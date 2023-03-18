@@ -1,13 +1,6 @@
 // https://leetcode.cn/problems/binary-tree-postorder-traversal
 // 给你一棵二叉树的根节点 root ，返回其节点值的 后序遍历 。
 
-declare class TreeNode {
-  val: number;
-  left: TreeNode | null;
-  right: TreeNode | null;
-  constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null);
-}
-
 // 迭代改进
 export default function postorderTraversal(root: TreeNode | null): number[] {
   const res: number[] = [];

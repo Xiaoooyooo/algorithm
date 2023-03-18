@@ -5,11 +5,6 @@
 // 注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况。
 // 如果链表中存在环 ，则返回 true 。 否则，返回 false 。
 // -10^5 <= Node.val <= 10^5
-declare class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(value?: number, next?: ListNode);
-}
 
 export default function hasCycle(head: ListNode | null) {
   let next = head;

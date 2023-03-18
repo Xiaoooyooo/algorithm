@@ -1,13 +1,6 @@
 // https://leetcode.cn/problems/binary-tree-preorder-traversal
 // 给你二叉树的根节点 root ，返回它节点值的 前序 遍历。
 
-declare class TreeNode {
-  val: number;
-  left: TreeNode | null;
-  right: TreeNode | null;
-  constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null);
-}
-
 // 迭代与栈结合
 export default function preorderTraversal(root: TreeNode | null) {
   const res: number[] = [];

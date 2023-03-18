@@ -1,11 +1,5 @@
 // https://leetcode.cn/problems/binary-tree-inorder-traversal
 // 给定一个二叉树的根节点 root ，返回 它的 中序 遍历 。
-declare class TreeNode {
-  val: number;
-  left: TreeNode | null;
-  right: TreeNode | null;
-  constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null);
-}
 
 // 迭代
 export default function inorderTraversal(root: TreeNode | null): number[] {
