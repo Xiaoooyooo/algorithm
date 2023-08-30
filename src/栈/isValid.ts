@@ -26,3 +26,26 @@ export default function isValid(s: string): boolean {
   }
   return stack.length === 0;
 }
+
+// function isValid(s: string): boolean {
+//   if (s.length === 1) return false;
+
+//   const map = {
+//     "}": "{",
+//     "]": "[",
+//     ")": "("
+//   };
+
+//   const stack = [];
+
+//   for (let i = 0; i < s.length; i++) {
+//     const str = s[i];
+//     if (map[str] && stack[stack.length - 1] === map[str]) {
+//       stack.pop();
+//     } else {
+//       stack.push(str);
+//     }
+//   }
+
+//   return stack.length === 0;
+// }

@@ -2,7 +2,7 @@
   "editorconfig": true,
   "tabWidth": 2,
   "printWidth": 80,
-  "endOfLine": "crlf",
+  "endOfLine": "auto",
   "semi": true,
   "singleQuote": false,
   "trailingComma": "none"
