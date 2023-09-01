@@ -2,7 +2,7 @@ import assert from "assert";
 import minTrioDegree from "./minTrioDegree";
 
 describe("minTrioDegree", () => {
-  it.only("go", () => {
+  it("go", () => {
     assert.equal(
       minTrioDegree(6, [
         [1, 2],
