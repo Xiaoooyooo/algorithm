@@ -3,7 +3,7 @@ import lcaDeepestLeaves from "./lcaDeepestLeaves";
 import { deserialize, serialize } from "./serializeAndDeserialize";
 
 describe("lcaDeepestLeaves", () => {
-  it.only("go", () => {
+  it("go", () => {
     assert.equal(test("[3,5,1,6,null,null,8]"), "[3,5,1,6,null,null,8]");
     assert.equal(test("[3,5,1,6,2,0,8,null,null,7,4]"), "[2,7,4]");
     assert.equal(test("[3,5,1,6,2,0,8]"), "[3,5,1,6,2,0,8]");
