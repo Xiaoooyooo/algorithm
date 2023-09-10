@@ -2,7 +2,7 @@ import assert from "assert";
 import canFinish from "./canFinish";
 
 describe("canFinish", () => {
-  it.only("go", () => {
+  it("go", () => {
     assert.equal(canFinish(2, [[1, 0]]), true);
     assert.equal(
       canFinish(2, [
