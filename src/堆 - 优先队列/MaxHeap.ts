@@ -20,6 +20,12 @@ export default class MaxHeap {
     this.data.push(value);
     this.shiftUp();
   }
+  isEmpty() {
+    return this.data.length === 0;
+  }
+  size() {
+    return this.data.length;
+  }
   private shiftDown() {
     let i = 0;
     let left = 2 * (i + 1) - 1,

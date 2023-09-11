@@ -2,7 +2,7 @@ import assert from "assert";
 import findOrder from "./findOrder";
 
 describe("findOrder", () => {
-  it.only("go", () => {
+  it("go", () => {
     assert.deepEqual(findOrder(2, [[1, 0]]), [0, 1]);
     assert.deepEqual(
       findOrder(4, [
