@@ -2,7 +2,7 @@ import assert from "assert";
 import scheduleCourse from "./scheduleCourse";
 
 describe("scheduleCourse", () => {
-  it.only("go", () => {
+  it("go", () => {
     assert.equal(
       scheduleCourse([
         [100, 200],
