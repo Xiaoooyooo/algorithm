@@ -2,7 +2,7 @@ import assert from "assert";
 import checkIfPrerequisite from "./checkIfPrerequisite";
 
 describe("checkIfPrerequisite", () => {
-  it.only("go", () => {
+  it("go", () => {
     assert.deepEqual(
       checkIfPrerequisite(
         2,
