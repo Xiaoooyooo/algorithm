@@ -2,7 +2,7 @@ import assert from "assert";
 import checkValidGrid from "./checkValidGrid";
 
 describe("checkValidGrid", () => {
-  it.only("go", () => {
+  it("go", () => {
     assert.equal(
       checkValidGrid([
         [0, 11, 16, 5, 20],
