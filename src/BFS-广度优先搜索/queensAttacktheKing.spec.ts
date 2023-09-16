@@ -2,7 +2,7 @@ import assert from "assert";
 import queensAttacktheKing from "./queensAttacktheKing";
 
 describe("queensAttacktheKing", () => {
-  it.only("go", () => {
+  it("go", () => {
     assert.deepEqual(
       queensAttacktheKing(
         [
