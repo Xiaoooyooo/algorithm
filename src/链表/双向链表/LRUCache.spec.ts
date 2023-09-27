@@ -2,7 +2,7 @@ import assert from "assert";
 import LRUCache from "./LRUCache";
 
 describe("LRUCache", () => {
-  it.only("go", () => {
+  it("go", () => {
     let instance = new LRUCache(1);
     instance.put(1, 1);
     instance.put(1, 2);
