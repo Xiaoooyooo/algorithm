@@ -2,7 +2,7 @@ import assert from "assert";
 import LFUCache from "./LFUCache";
 
 describe("LFUCache", () => {
-  it.only("go", () => {
+  it("go", () => {
     // test(
     //   [
     //     "LFUCache",

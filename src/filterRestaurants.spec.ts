@@ -2,7 +2,7 @@ import assert from "assert";
 import filterRestaurants from "./filterRestaurants";
 
 describe("filterRestaurants", () => {
-  it.only("go", () => {
+  it("go", () => {
     assert.deepEqual(
       filterRestaurants(
         [
