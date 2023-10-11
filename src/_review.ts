@@ -1,30 +1,13 @@
-export default function fn(nums: number[], target: number) {
-  const len = nums.length;
-  function findLeft() {
-    let i = 0,
-      j = len - 1;
-    while (i <= j) {
-      const mid = Math.floor((i + j) / 2);
-      if (nums[mid] >= target) {
-        j = mid - 1;
-      } else {
-        i = mid + 1;
-      }
-    }
-    return nums[i] === target ? i : -1;
+export default function fn(prices: number[], fee: number) {
+  const len = prices.length;
+  const dp = Array(len)
+    .fill(0)
+    .map(() => [0, 0]);
+  dp[0][0] = -prices[0];
+  for (let i = 1; i < len; i++) {
+    dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] - prices[i]);
+    dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] + prices[i] - fee);
   }
-  function findRight() {
-    let i = 0,
-      j = len - 1;
-    while (i <= j) {
-      const mid = Math.floor((i + j) / 2);
-      if (nums[mid] <= target) {
-        i = mid + 1;
-      } else {
-        j = mid - 1;
-      }
-    }
-    return nums[i - 1] === target ? i - 1 : -1;
-  }
-  return [findLeft(), findRight()];
+  // console.log(dp);
+  return dp[len - 1][1];
 }
