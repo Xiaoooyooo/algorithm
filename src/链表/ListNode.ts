@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 export class ListNode<T = any> {
   val?: T;
   next: ListNode<T> | null;

@@ -4,14 +4,14 @@
 // 设计一个算法来序列化和反序列化 二叉搜索树 。 对序列化/反序列化算法的工作方式没有限制。
 // 您只需确保二叉搜索树可以序列化为字符串，并且可以将该字符串反序列化为最初的二叉搜索树。
 // 编码的字符串应尽可能紧凑。
-import { TreeNode } from "./index";
+import { TreeNode } from "./Tree";
 
 /*
  * Encodes a tree to a single string.
  */
 export function serialize(root: TreeNode): string {
   const res = [];
-  let queue: TreeNode[] = [root];
+  const queue: TreeNode[] = [root];
   while (queue.length) {
     const curr = queue.shift();
     if (curr === null) res.push(null);
@@ -34,7 +34,7 @@ export function serialize(root: TreeNode): string {
 export function deserialize(data: string): TreeNode | null {
   const arr: number[] = JSON.parse(data);
   if (arr.length === 0) return null;
-  let root: TreeNode | null = new TreeNode(arr[0]);
+  const root: TreeNode | null = new TreeNode(arr[0]);
   const queue = [root];
   let index = 0;
   while (index < arr.length - 1) {

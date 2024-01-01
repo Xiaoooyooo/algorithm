@@ -1,6 +1,6 @@
 import assert from "assert";
 import { serialize, deserialize } from "./serializeAndDeserialize";
-import { TreeNode } from "./index";
+import { TreeNode } from "./Tree";
 
 describe("serializeAndDeserialize", () => {
   const root1 = new TreeNode(1);
