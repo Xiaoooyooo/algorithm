@@ -27,7 +27,7 @@ export default function reorderList(head: ListNode | null): void {
   }
   // 合并链表
   while (head && prev) {
-    let t = head.next,
+    const t = head.next,
       r = prev.next;
     head.next = prev;
     prev.next = t;

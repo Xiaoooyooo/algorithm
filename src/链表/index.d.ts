@@ -1,5 +1,5 @@
 declare class ListNode<T = number> {
-  val: T;
+  val?: T;
   next: ListNode<T> | null;
-  constructor(value?: number, next?: ListNode<T>);
+  constructor(value?: number);
 }
